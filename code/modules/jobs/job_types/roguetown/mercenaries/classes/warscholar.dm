@@ -154,20 +154,22 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("speed", 2)
 			r_hand = /obj/item/rogueweapon/woodstaff/naledi
-			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/grey
-			mask = /obj/item/clothing/mask/rogue/lordmask/naledi
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/magered
+
+			mask = /obj/item/clothing/mask/rogue/lordmask/tarnished
 			belt = /obj/item/storage/belt/rogue/leather
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex
-			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			gloves = /obj/item/clothing/gloves/roguetown/angle/pontifex
+			beltl = /obj/item/storage/belt/rogue/surgery_bag
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shoes = /obj/item/clothing/shoes/roguetown/boots
+			gloves = /obj/item/clothing/gloves/roguetown/angle
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
 			cloak = /obj/item/clothing/cloak/half
 			H.grant_language(/datum/language/celestial)
-			shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 
-			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife, /obj/item/storage/belt/rogue/surgery_bag)
+			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife, /obj/item/flashlight/flare/torch)
 			
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
 			C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)	//Starts off maxed out.
