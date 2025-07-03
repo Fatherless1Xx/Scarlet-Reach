@@ -4,6 +4,16 @@
 	crate_name = "merchant guild's crate"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
+/datum/supply_pack/rogue/tools/ropes
+	name = "Ropes"
+	cost = 10
+	contains = list(
+					/obj/item/rope,
+					/obj/item/rope,
+					/obj/item/rope,
+				)
+
+
 /datum/supply_pack/rogue/tools/scomst
 	name = "Scomstone"
 	cost = 120
@@ -39,7 +49,7 @@
 
 /datum/supply_pack/rogue/tools/paper
 	name = "Paper"
-	cost = 20
+	cost = 3
 	contains = list(
 					/obj/item/paper/scroll,
 					/obj/item/paper/scroll,
@@ -109,6 +119,16 @@
 	cost = 15
 	contains = /obj/item/bodypart/r_leg/prosthetic
 
+/datum/supply_pack/rogue/tools/waterskin
+	name = "Waterskin"
+	cost = 10
+	contains = list(/obj/item/reagent_containers/glass/bottle/waterskin)
+
+/datum/supply_pack/rogue/tools/bedroll
+	name = "Bedroll"
+	cost = 20
+	contains = list(/obj/item/bedroll)
+
 /datum/supply_pack/rogue/tools/hoe
 	name = "Hoe"
 	cost = 10
@@ -157,25 +177,34 @@
 					/obj/item/storage/keyring,
 					/obj/item/storage/keyring)
 
-/datum/supply_pack/rogue/tools/scythe
-	name = "Scythe"
-	cost = 25
-	contains = list(/obj/item/rogueweapon/scythe)
+/datum/supply_pack/rogue/tools/lampterns
+	name = "Lamps"
+	cost = 60
+	contains = list(/obj/item/flashlight/flare/torch/lantern,
+					/obj/item/flashlight/flare/torch/lantern,
+					/obj/item/flashlight/flare/torch/lantern)
 
 /datum/supply_pack/rogue/tools/handsaw
 	name = "Handsaw"
-	cost = 35
+	cost = 60
 	contains = list(/obj/item/rogueweapon/handsaw)
 
 /datum/supply_pack/rogue/tools/hammer
 	name = "Hammer"
-	cost = 35
+	cost = 60
 	contains = list(/obj/item/rogueweapon/hammer/iron)
 
 /datum/supply_pack/rogue/tools/fryingpan
 	name = "Frying Pan"
 	cost = 20
 	contains = list(/obj/item/cooking/pan)
+
+/datum/supply_pack/rogue/tools/needles
+	name = "Needles"
+	cost = 15
+	contains = list(/obj/item/needle,
+					/obj/item/needle,
+					/obj/item/needle)
 
 /datum/supply_pack/rogue/tools/shopkeyy
 	name = "Spare Shopkey"
@@ -193,23 +222,20 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical,
 	/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical,
 	/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical)
+	
 
 /datum/supply_pack/rogue/tools/gwstrap
 	name = "Greatweapon Strap"
 	cost = 30
-	contains = list(/obj/item/gwstrap)
+	contains = list(/obj/item/gwstrap,)
 
 /datum/supply_pack/rogue/tools/headhook
 	name = "Iron Head Hook"
 	cost = 10
 	contains = list(/obj/item/storage/hip/headhook)
 
-/datum/supply_pack/rogue/tools/spade
-	name = "Wooden Spade"
-	cost = 5
-	contains = list(/obj/item/rogueweapon/shovel/small)
+/datum/supply_pack/rogue/tools/surgeonsbag
+	name = "Surgeon's bag, Full"
+	cost = 80
+	contains = list(/obj/item/storage/belt/rogue/surgery_bag)
 
-/datum/supply_pack/rogue/tools/shovel
-	name = "Shovel"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/shovel)
