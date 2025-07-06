@@ -59,8 +59,6 @@
 	. = ..()
 	if(get_dist(user, target) > 7)
 		return
-	
-	user.changeNext_move(CLICK_CD_MELEE)
 
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
