@@ -50,6 +50,7 @@
 	l_sleeve_status = SLEEVE_NORMAL
 	armor_class = ARMOR_CLASS_LIGHT
 	salvage_result = /obj/item/natural/hide/cured
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/armordress/alt
 	icon_state = "armordressalt"
@@ -132,6 +133,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	armor_class = ARMOR_CLASS_LIGHT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	name = "light gambeson"
@@ -153,6 +155,7 @@
 	l_sleeve_status = SLEEVE_NORMAL
 	var/shiftable = TRUE
 	var/shifted = FALSE
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/attack_right(mob/user)
 	if(!shiftable)
@@ -191,6 +194,7 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	color = "#FFFFFF"
 	shiftable = FALSE
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/royal
 	name = "royal gambeson"
@@ -257,6 +261,7 @@
 	detail_tag = "_detail"
 	color = CLOTHING_WHITE
 	detail_color = CLOTHING_BLACK
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/winterjacket/update_icon()
 	cut_overlays()
@@ -286,12 +291,14 @@
 	name = "artificer jacket"
 	icon_state = "artijacket"
 	desc = "A thick leather jacket adorned with fur and cog decals. The height of Heartfelt fashion."
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"
 	desc = "More form over function, this armor is fit for demonstration of might rather than open combat. The aged gilding slowly tarnishes away."
 	icon_state = "shadowplate"
 	item_state = "shadowplate"
+	boobed = TRUE
 
 //................ Corset.................... //
 /obj/item/clothing/suit/roguetown/armor/corset
@@ -301,18 +308,21 @@
 	icon_state = "corset"
 	armor_class = ARMOR_CLASS_LIGHT
 	body_parts_covered = CHEST
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	name = "arming jacket"
 	icon_state = "dgamb"
 	body_parts_covered = COVERAGE_ALL_BUT_LEGS
 	allowed_sex = list(MALE, FEMALE)
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/shadowrobe
 	name = "stalker robe"
 	desc = "A thick robe in royal purple, befitting the hand, while remaining easy for them to slip about in.."
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	icon_state = "shadowrobe"
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant
 	name = "hierophant's shawl"
@@ -321,6 +331,7 @@
 	desc = "A thick robe intervowen with spell-laced fabrics. Thick and protective while remaining light and breezy; the perfect gear for protecting one from the threats of the sun, the desert and the daemons, yet still allowing one to cast spells aptly."
 	naledicolor = TRUE
 	shiftable = FALSE
+	boobed = TRUE
 	
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/grey
 	name = "hierophant's shawl"
@@ -330,6 +341,7 @@
 	naledicolor = FALSE
 	shiftable = FALSE
 	color = CLOTHING_GREY
+	boobed = TRUE
 	
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex
 	name = "pontifex's kaftan"
@@ -337,6 +349,7 @@
 	item_state = "monkleather"
 	desc = "Tight boiled leathers that stretch and fit to one's frame perfectly."
 	shiftable = FALSE
+	boobed = TRUE
 
 //leather family
 
@@ -357,12 +370,14 @@
 	sellprice = 20
 	armor_class = ARMOR_CLASS_LIGHT
 	salvage_result = /obj/item/natural/hide/cured
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/cuirass
 	name = "leather cuirass"
 	desc = "A cuirass made of leather."
 	icon_state = "leather"
 	max_integrity = 200
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide
 	name = "hide armor"
@@ -370,6 +385,7 @@
 	icon_state = "hidearmor"
 	max_integrity = 250
 	armor_class = ARMOR_CLASS_LIGHT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/warden
 	name = "forestry armor"
@@ -377,6 +393,7 @@
 	icon = 'icons/roguetown/clothing/special/warden.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/warden.dmi'
 	icon_state = "foresthide"
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded
 	name = "studded leather armor"
@@ -392,6 +409,7 @@
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 25
 	armor_class = ARMOR_CLASS_LIGHT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy
 	name = "hardened leather armor"
@@ -403,6 +421,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH)
 	max_integrity = 300
 	sellprice = 25
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	name = "hardened leather coat"
@@ -414,6 +433,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH)
 	max_integrity = 300
 	sellprice = 25
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/jacket
 	name = "hardened leather jacket"
@@ -425,6 +445,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH)
 	max_integrity = 300
 	sellprice = 25
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/trophyfur
 	name = "treated trophy fur robes"
@@ -435,6 +456,7 @@
 	prevent_crits = list(BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_PICK, BCLASS_TWIST)
 	max_integrity = 300
 	sellprice = 100
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/bikini
 	name = "leather corslet"
@@ -444,6 +466,7 @@
 	item_state = "leatherkini"
 	allowed_sex = list(FEMALE, MALE)
 	allowed_race = CLOTHED_RACES_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
 	name = "studded leather corslet"
@@ -453,6 +476,7 @@
 	item_state = "studleatherkini"
 	allowed_sex = list(FEMALE)
 	allowed_race = CLOTHED_RACES_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/bikini
 	name = "hide corslet"
@@ -462,6 +486,7 @@
 	item_state = "hidearmorkini"
 	allowed_sex = list(FEMALE)
 	allowed_race = CLOTHED_RACES_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest
 	name = "leather vest"
@@ -481,6 +506,7 @@
 	sleevetype = null
 	sleeved = null
 	armor_class = ARMOR_CLASS_LIGHT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 	name = "sea jacket"
@@ -491,6 +517,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	sleevetype = "shirt"
 	sewrepair = TRUE
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/white
 	color = CLOTHING_WHITE
@@ -502,6 +529,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/armor.dmi'
 	allowed_sex = list(MALE, FEMALE)
 	allowed_race = NON_DWARVEN_RACE_TYPES
+	boobed = TRUE
 
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
@@ -511,6 +539,7 @@
 	color = null
 	allowed_sex = list(MALE, FEMALE)
 	allowed_race = NON_DWARVEN_RACE_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/longcoat
 	name = "longcoat"
@@ -524,6 +553,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	allowed_sex = list(MALE, FEMALE)
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/longcoat/ComponentInitialize()
 	. = ..()
@@ -573,6 +603,7 @@
 	armor_class = ARMOR_CLASS_LIGHT
 	allowed_sex = list(MALE, FEMALE)
 	allowed_race = CLOTHED_RACES_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/silkcoat/Initialize()
 	. = ..()
@@ -592,6 +623,7 @@
 	color = null
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
+	boobed = TRUE
 
 //MEDIUM ARMOR//
 
@@ -608,6 +640,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/Initialize(mapload)
 	. = ..()
@@ -619,12 +652,14 @@
 	icon_state = "ancientchain"
 	smeltresult = /obj/item/ingot/aalloy
 	max_integrity = 50
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/paalloy
 	name = "ancient chainmail"
 	desc = "Chainmail formed of ancient alloys. Aeon's grasp has been lifted from it."
 	icon_state = "ancientchain"
 	smeltresult = /obj/item/ingot/aaslag
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	icon_state = "ichainmail"
@@ -632,6 +667,7 @@
 	desc = "A chain vest made of heavy iron rings. Better than nothing."
 	body_parts_covered = COVERAGE_TORSO
 	smeltresult = /obj/item/ingot/iron
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
@@ -644,6 +680,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/aalloy
 	name = "decrepit hauberk"
@@ -651,12 +688,14 @@
 	icon_state = "ancienthauberk"
 	max_integrity = 50
 	smeltresult = /obj/item/ingot/aalloy
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/paalloy
 	name = "ancient hauberk"
 	desc = "A hauberk formed out of ancient alloys. Aeon's grasp is upon it."
 	icon_state = "ancienthauberk"
 	smeltresult = /obj/item/ingot/aaslag
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate
 	slot_flags = ITEM_SLOT_ARMOR
@@ -668,6 +707,7 @@
 	icon_state = "ornatehauberk"
 	item_state = "ornatehauberk"
 	max_integrity = 350
+	boobed = TRUE
 
 
 
@@ -681,6 +721,7 @@
 	allowed_race = CLOTHED_RACES_TYPES
 	body_parts_covered = CHEST|GROIN
 	armor_class = ARMOR_CLASS_LIGHT //placed in the medium category to keep it with its parent obj
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/bikini
 	slot_flags = ITEM_SLOT_ARMOR
@@ -696,6 +737,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half
 	slot_flags = ITEM_SLOT_ARMOR
@@ -713,6 +755,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/aalloy
 	name = "decrepit cuirass"
@@ -720,12 +763,14 @@
 	icon_state = "ancientcuirass"
 	smeltresult = /obj/item/ingot/aalloy
 	max_integrity = 150
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/paalloy
 	name = "ancient cuirass"
 	desc = "A cuirass of ancient alloys. Aeon's grasp lifted from its form."
 	icon_state = "ancientcuirass"
 	smeltresult = /obj/item/ingot/aaslag
+	boobed = TRUE
 
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/fluted
@@ -735,6 +780,7 @@
 
 	body_parts_covered = COVERAGE_ALL_BUT_ARMS
 	max_integrity = 350
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
 	name = "Silver cuirass"
@@ -743,6 +789,7 @@
 			Made to endure."
 	
 	max_integrity = 300
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	name = "iron breastplate"
@@ -751,6 +798,7 @@
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/copper
 	name = "heart protector"
@@ -762,11 +810,13 @@
 	body_parts_covered = CHEST
 	armor_class = ARMOR_CLASS_LIGHT
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/elven
 	name = "elven guardian cuirass"
 	desc = "A cuirass made of steel with a thin decorative gold plating. Lightweight and durable."
 	color = COLOR_ASSEMBLY_GOLD
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/scale
 	slot_flags = ITEM_SLOT_ARMOR
@@ -781,13 +831,14 @@
 	equip_delay_self = 4 SECONDS
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
+	boobed = TRUE
 
 //HEAVY ARMOR//
 
 /obj/item/clothing/suit/roguetown/armor/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel half-plate"
-	desc = "\'Adventurer-fit\' plate armor with pauldrons. The poor fitting leaves many small gaps for daggers and bolts to pierce something vital, so a gambeson is recommended."
+	desc = '\'Adventurer-fit\' plate armor with pauldrons. The poor fitting leaves many small gaps for daggers and bolts to pierce something vital, so a gambeson is recommended.'
 	body_parts_covered = COVERAGE_TORSO
 	icon_state = "halfplate"
 	item_state = "halfplate"
@@ -802,6 +853,7 @@
 	unequip_delay_self = 4 SECONDS
 	armor_class = ARMOR_CLASS_HEAVY
 	smelt_bar_num = 3
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/ComponentInitialize()
 	. = ..()
@@ -814,6 +866,7 @@
 	item_state = "ancientplate"
 	max_integrity = 150
 	smeltresult = /obj/item/ingot/aalloy
+	boobed = TRUE
 
 
 /obj/item/clothing/suit/roguetown/armor/plate/paalloy
@@ -822,6 +875,7 @@
 	icon_state = "ancientplate"
 	item_state = "ancientplate"
 	smeltresult = /obj/item/ingot/aaslag
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted
 	name = "fluted half-plate"
@@ -834,6 +888,7 @@
 
 	max_integrity = 600
 	body_parts_covered = COVERAGE_SHIRT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/graggar
 	name = "vicious half-plate"
@@ -842,6 +897,7 @@
 	max_integrity = 500 // We are probably one of the best medium armor sets. At higher integ than most(heavy armor levels, pretty much. But worse resistances, we get the bonus over the other sets of being medium and being unequippable.)
 	icon_state = "graggarplate"
 	armor = ARMOR_CUIRASS
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/graggar/pickup(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_HORDE))
@@ -858,6 +914,7 @@
 	icon_state = "ornatehalfplate"
 
 	max_integrity = 400
+	boobed = TRUE
 
 	/// Whether the user has the Heavy Armour Trait prior to donning.
 	var/traited = FALSE
@@ -888,6 +945,7 @@
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 4
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted
 	name = "fluted plate"
@@ -898,6 +956,7 @@
 	unequip_delay_self = 14 SECONDS
 
 	max_integrity = 600
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted/ornate
 	name = "Silver plate"
@@ -906,6 +965,7 @@
 	icon_state = "ornateplate"
 
 	max_integrity = 500
+	boobed = TRUE
 
 	/// Whether the user has the Heavy Armour Trait prior to donning.
 	var/traited = FALSE
@@ -937,6 +997,7 @@
 	desc = "Often, you have heard that told,"
 	icon_state = "matthiosarmor"
 	max_integrity = 700	
+	boobed = TRUE
 
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/matthios/Initialize()
@@ -955,6 +1016,7 @@
 	icon_state = "zizoplate"
 	max_integrity = 700
 	peel_threshold = 5	//-Any- weapon will require 5 peel hits to peel coverage off of this armor.
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/zizo/Initialize()
 	. = ..()
@@ -981,6 +1043,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 3
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/heartfelt/lord
 	slot_flags = ITEM_SLOT_ARMOR
@@ -999,6 +1062,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
 	smelt_bar_num = 4
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/heartfelt/hand
 	slot_flags = ITEM_SLOT_ARMOR
@@ -1017,6 +1081,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
 	smelt_bar_num = 4
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/otavan
 	name = "otavan half-plate"
@@ -1027,6 +1092,7 @@
 	item_state = "corsethalfplate"
 	adjustable = CAN_CADJUST
 	allowed_race = NON_DWARVEN_RACE_TYPES
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/otavan/AdjustClothes(mob/user)
 	if(loc == user)
@@ -1069,6 +1135,7 @@
 	armor_class = ARMOR_CLASS_HEAVY
 	sleeved_detail = FALSE
 	boobed_detail = FALSE
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/Initialize()
 	. = ..()
@@ -1123,6 +1190,7 @@
 	icon_state = "coat_of_plates"
 	blocksound = PLATEHIT
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat
 	name = "coat of the commander"
@@ -1132,6 +1200,7 @@
 	var/picked = FALSE
 	sleeved_detail = TRUE
 	boobed_detail = TRUE
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat/attack_right(mob/user)
 	if(picked)
@@ -1167,6 +1236,7 @@
 	equip_delay_self = 40
 	armor_class = ARMOR_CLASS_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
 	slot_flags = ITEM_SLOT_ARMOR
@@ -1184,6 +1254,7 @@
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
 	blocksound = SOFTHIT
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat/ComponentInitialize()	//No movement rustle component.
 	return
@@ -1208,6 +1279,7 @@
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 4
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
 	name = "blacksteel cuirass"
@@ -1222,6 +1294,7 @@
 	smeltresult = /obj/item/ingot/blacksteel
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/elven_plate
 	name = "woad elven plate"
@@ -1240,6 +1313,7 @@
 	smelt_bar_num = 4
 	blocksound = SOFTHIT
 	armor_class = ARMOR_CLASS_MEDIUM
+	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/plate/elven_plate/Initialize(mapload)
 	. = ..()
