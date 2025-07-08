@@ -265,3 +265,7 @@
 			beltr = /obj/item/rogueweapon/whip
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/recipe_book/survival = 1, /obj/item/flashlight/flare/torch = 1)
+			// Add Flagellant spells
+			H.add_spell(/obj/effect/proc_holder/spell/invoked/damage_transfer)
+			H.add_spell(/obj/effect/proc_holder/spell/invoked/affliction_transfer)
+			H.add_spell(/obj/effect/proc_holder/spell/invoked/damage_link)
