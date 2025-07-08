@@ -252,8 +252,8 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 			H.change_stat("constitution", 5)
-			H.change_stat("endurance", 5)
-			H.change_stat("speed", 1)
+			H.change_stat("endurance", 3)
+			H.change_stat("speed", 3)
 			H.change_stat("strength", -2)
 			H.change_stat("intelligence", -2)
 
@@ -265,7 +265,7 @@
 			beltr = /obj/item/rogueweapon/whip
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/recipe_book/survival = 1, /obj/item/flashlight/flare/torch = 1)
-			// Add Flagellant spells
-			H.add_spell(/obj/effect/proc_holder/spell/invoked/damage_transfer)
-			H.add_spell(/obj/effect/proc_holder/spell/invoked/affliction_transfer)
-			H.add_spell(/obj/effect/proc_holder/spell/invoked/damage_link)
+			if(H.mind)
+				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_transfer)
+				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/affliction_transfer)
+				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_link)
