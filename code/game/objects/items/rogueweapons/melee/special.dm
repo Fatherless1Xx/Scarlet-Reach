@@ -277,7 +277,7 @@
 	name = "barotrauma"
 	desc = "A gift from a creature of the sea. The claw is sharpened to a wicked edge."
 	icon_state = "abyssorclaw"
-	force = 27	//Its thrust will be able to pen 80 stab armor if the wielder has 17 STR. (With softcap)
+	force = 27	//Its thrust will be able to pen 80 stab armor if the wielder has 17 STR.
 	max_integrity = 120
 
 

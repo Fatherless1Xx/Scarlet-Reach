@@ -1013,9 +1013,7 @@
 	duration = 15 SECONDS
 
 /datum/status_effect/buff/bloodrage/on_apply()
-	ADD_TRAIT(owner, TRAIT_STRENGTH_UNCAPPED, TRAIT_MIRACLE)
-	var/holyskill = owner.get_skill_level(/datum/skill/magic/holy)
-	duration = ((15 SECONDS) * holyskill)
+	duration = ((15 SECONDS) * max(owner.get_skill_level(/datum/skill/magic/holy), 1))
 	var/filter = owner.get_filter(BLOODRAGE_FILTER)
 	if(!filter)
 		owner.add_filter(BLOODRAGE_FILTER, 2, list("type" = "outline", "color" = outline_color, "alpha" = 60, "size" = 2))
@@ -1023,7 +1021,7 @@
 		effectedstats = list("strength" = 4)
 		. = ..()
 		return TRUE
-	if(holyskill >= SKILL_LEVEL_APPRENTICE)
+	if(owner.get_skill_level(/datum/skill/magic/holy) >= SKILL_LEVEL_APPRENTICE)
 		effectedstats = list("strength" = 2)
 	else
 		effectedstats = list("strength" = 1)
@@ -1032,7 +1030,6 @@
 
 /datum/status_effect/buff/bloodrage/on_remove()
 	. = ..()
-	REMOVE_TRAIT(owner, TRAIT_STRENGTH_UNCAPPED, TRAIT_MIRACLE)
 	owner.visible_message(span_warning("[owner] wavers, their rage simmering down."))
 	owner.OffBalance(3 SECONDS)
 	owner.remove_filter(BLOODRAGE_FILTER)
