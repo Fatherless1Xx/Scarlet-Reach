@@ -213,7 +213,7 @@
 							C.emote("choke")
 						var/choke_damage
 						if(user.STASTR > STRENGTH_SOFTCAP)
-							choke_damage = STRENGTH_SOFTCAP
+							choke_damage = user.STASTR * 0.75
 						else
 							choke_damage = user.STASTR * 0.75
 						if(chokehold)

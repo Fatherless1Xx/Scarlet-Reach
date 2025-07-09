@@ -1020,10 +1020,9 @@
 	if(!filter)
 		owner.add_filter(BLOODRAGE_FILTER, 2, list("type" = "outline", "color" = outline_color, "alpha" = 60, "size" = 2))
 	if(!HAS_TRAIT(owner, TRAIT_DODGEEXPERT))
-		if(owner.STASTR < STRENGTH_SOFTCAP)
-			effectedstats = list("strength" = (STRENGTH_SOFTCAP - owner.STASTR))
-			. = ..()
-			return TRUE
+		effectedstats = list("strength" = 4)
+		. = ..()
+		return TRUE
 	if(holyskill >= SKILL_LEVEL_APPRENTICE)
 		effectedstats = list("strength" = 2)
 	else
