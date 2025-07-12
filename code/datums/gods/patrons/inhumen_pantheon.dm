@@ -59,9 +59,9 @@
 
 /datum/patron/inhumen/matthios
 	name = "Matthios"
-	domain = "God of Exchange, Alchemy, Theft, and Greed"
-	desc = "The Man who stole fire from the sun and used it in his pursuit of immortality; exchanging the knowledge of how to make fire with the lessers for safety in doing so. He guides those who live in the dark, away from the flame of civilization; and those who believe in his cause bring the wealth of the undeserving in the light to the deserving in the dark."
-	worshippers = "Highwaymen, Alchemists, Downtrodden Peasants, and Merchants"
+	domain = "God of Envy, Cruel Trickery, Manipulation, and Subversion"
+	desc = "Like Xylix, Matthios is a master of deception and trickery, but where Xylix delights in harmless pranks, Matthios revels in cruel manipulation. He corrupts the hearts of the weak with promises of power and revenge, turning their justified grievances into fuel for his destructive agenda. His followers become consumed by their own envy, spreading chaos through subtle schemes and psychological warfare while he laughs at their suffering."
+	worshippers = "Manipulators, Thieves, Discontented Peasants, and the Envious"
 	mob_traits = list(TRAIT_COMMIE, TRAIT_MATTHIOS_EYES)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison					= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/invoked/appraise						= CLERIC_ORI,
