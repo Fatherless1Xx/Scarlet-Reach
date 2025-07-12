@@ -60,7 +60,7 @@
 /datum/patron/inhumen/matthios
 	name = "Matthios"
 	domain = "God of Envy, Cruel Trickery, Manipulation, and Subversion"
-	desc = "Like Xylix, Matthios is a master of deception and trickery, but where Xylix delights in harmless pranks, Matthios revels in cruel manipulation. He corrupts the hearts of the weak with promises of power and revenge, turning their justified grievances into fuel for his destructive agenda. His followers become consumed by their own envy, spreading chaos through subtle schemes and psychological warfare while he laughs at their suffering."
+	desc = "Like Xylix, Matthios is a master of deception and trickery, but where Xylix delights in harmless pranks, Matthios revels in cruel manipulation. He corrupts the hearts of the weak with promises of power and revenge, turning their justified grievances into fuel for his destructive entertainment. His followers become consumed by their own envy, spreading chaos through subtle schemes and psychological warfare while he laughs at their suffering."
 	worshippers = "Manipulators, Thieves, Discontented Peasants, and the Envious"
 	mob_traits = list(TRAIT_COMMIE, TRAIT_MATTHIOS_EYES)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison					= CLERIC_ORI,
