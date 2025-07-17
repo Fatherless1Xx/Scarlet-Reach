@@ -1042,7 +1042,6 @@
 	if(user.mind)
 		if((user.mind.assigned_role == "Priest") || ((user.mind.assigned_role == "Acolyte") && (user.patron.type == /datum/patron/divine/eora)))
 			if(istype(W, /obj/item/reagent_containers/food/snacks/grown/apple))
-				var/marriage
 				var/obj/item/reagent_containers/food/snacks/grown/apple/A = W
 				
 				if(A.bitten_names.len)
@@ -1081,12 +1080,15 @@
 						// Handle surname change for bride like regular family system
 						var/groom_surname = thegroom.family_surname
 						if(!groom_surname)
-							// If groom has no surname, create "of [firstname]"
-							var/list/groom_name_parts = splittext(thegroom.real_name, " ")
-							groom_surname = "of [groom_name_parts[1]]"
+							groom_surname = "of [thegroom.real_name]"
 						// Apply surname to bride (first name + groom's surname)
 						var/list/bride_name_parts = splittext(thebride.real_name, " ")
-						thebride.real_name = "[bride_name_parts[1]] [groom_surname]"
+						var/bride_first_name
+						if(bride_name_parts.len < 2)
+							bride_first_name = thebride.real_name
+						else
+							bride_first_name = bride_name_parts[1]
+						thebride.real_name = "[bride_first_name] [groom_surname]"
 
 						F.addMember(thebride)
 						F.addRel(thegroom,thebride,REL_TYPE_SPOUSE)
@@ -1095,7 +1097,6 @@
 						thegroom.adjust_triumphs(1)
 						thebride.adjust_triumphs(1)
 						priority_announce("[thegroom.real_name] has married [thebride.real_name]!", title = "Holy Union!", sound = 'sound/misc/bell.ogg')
-						marriage = TRUE
 						SSfamily.family_candidates -= thegroom
 						SSfamily.family_candidates -= thebride
 						qdel(A)
